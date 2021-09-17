@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/x<head>html">
+<head>
+<title>Pizza Shop 2</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="pizzajs.js"> </script>
+</head>
+
+<body onload="document.registration.userid.focus();">
+
+<form name='registration' onSubmit="return formValidation()">
+<table width="450" border="1" align="center" cellpadding="5">
+	<tr align="center">
+		<th colspan="2"> Pizza Shop 2.0</th>
+	</tr>
+	<tr>
+		<td style="width: 106px"> Name </td>
+		<td ><input name="userid" /></td>
+	</tr>
+	<tr>
+		<td style="width: 106px"> Pizza Topping </td>
+		<td ><input name="topping[]" type="checkbox" value="Supreme" id="top"/> Supreme <br>
+		<input name="topping[]" type="checkbox" value="Vegetarian" id="top1"/> Vegetarian <br>
+		<input name="topping[]" type="checkbox" value="Hawaiian" id="top2"/> Hawaiian<br />
+		 </td>
+	</tr>
+	<tr>
+		<td style="width: 106px"> Pizza Sauce </td>
+		<td ><select name="Select1" style="width:100px" id="sauce">
+			<option value="2"> Ketchup </option>
+			<option value="2"> Chilli </option>
+			<option value="2"> Sardine </option>
+			<option value="2">BBQ</option>
+			<option value="2">Curry</option>
+		</select>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 106px">Optional Extras </td>
+		<td ><input name="dairy[]" type="checkbox" value="Extra Cheese" id="dairy1"/> Extra Cheese <br/>
+		<input name="dairy[]" type="checkbox" value="Gluten Free Base" id="dairy2"/> Gluten Free Base </td>
+	</tr>
+	<tr>
+		<td colspan="2"> Delivery Instructions: <br/>
+		<textarea cols="56" name="TextArea1" rows="4" id="textarea" >
+		</textarea>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center"> 
+		<input name="submit" type="submit" value="Send My Order" /> </td>
+</form>
+	</tr>
+	<tr>
+		<td colspan="2" align="center">
+		<form action="search.php" method="post">
+			<input name="Submit1" type="submit" value="Generate Report" />
+		</form>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center">
+		<form action="searchID.php" method="post" >
+		ID Number <input name="ID" /><br></br>
+					<input name="SubmitID" type="submit" value="Search Using ID" />&nbsp;
+					<input name="SubmitDel" type="submit" value="Delete Data" />
+		</form>
+		</td>
+	</tr>
+</table>
+
+</body>
+
+</html>
